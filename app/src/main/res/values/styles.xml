@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="myDialogStyle" >
+        <!--这里如果设置parent是Dialog的话，style parent="@android:Theme.Dialog"，
+        是不能全屏的，会有底框的-->
+        <item name="android:windowFullscreen">true</item>
+        <!-- 是否有边框 -->
+        <item name="android:windowFrame">@null</item>
+
+        <item name="android:windowNoTitle">true</item>
+
+        <!-- 是否透明
+        <item name="android:windowBackground">@android:color/transparent</item>
+        -->
+
+        <!-- 是否是浮动 -->
+        <item name="android:windowIsFloating">true</item>
+
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+
+    <style name="myDialogTopAnim" >
+        <item name="android:windowEnterAnimation">@anim/topenter</item>
+        <item name="android:windowExitAnimation">@anim/topexit</item>
+    </style>
+
+    <style name="myDialogLeftAnim" >
+        <item name="android:windowEnterAnimation">@anim/leftenter</item>
+        <item name="android:windowExitAnimation">@anim/leftexit</item>
+    </style>
+
+    <style name="myDialogRightAnim" >
+        <item name="android:windowEnterAnimation">@anim/rightenter</item>
+        <item name="android:windowExitAnimation">@anim/rightexit</item>
+    </style>
+
+    <style name="myDialogBottomAnim" >
+        <item name="android:windowEnterAnimation">@anim/bottomenter</item>
+        <item name="android:windowExitAnimation">@anim/bottomexit</item>
+    </style>
+
+</resources>
